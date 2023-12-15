@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    background-color: #fafbff;
+}
+
+nav{
+    width: 30%;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px;
+    margin-right: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.sidebar-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-text-icon{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-text{
+    padding-left: 10px;
+}
+
+.color-svg{
+    fill: #9197b3;
+}
+
+.sidebar-item:hover{
+    padding: 8px;
+    background-color: #5932ea;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.company-logo {
+    margin-top: 20px;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*придумать что-то с лого*/
+.company-name img{
+    font-size: 16px;
+}
+
+sub{
+    font-size: 10px;
+}
+
+h2{
+    margin: 30px 0;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0 20px;
+    margin-top: 50px; /* Отступ сверху */
+}
+
+.sidebar-list li {
+    margin-bottom: 30px; /* Отступ между строчками */
+    display: block;
+}
+
+.header-block-table{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-sidebar-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block-table{
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.text-section{
+    /*text-align: center;*/
+    margin-bottom: 20px;
+}
+
+.text-color{
+    color: #16c098;
+    padding-top: 10px;
+}
+
+#input-search{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+}
+
+#input-search::placeholder {
+    background: url(../img/search_icon.svg) no-repeat;
+    padding-left: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border-bottom: 1px solid #dddddd;
+    padding: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+th{
+    color: #bec0c8;
+    font-weight: normal;
+}
+
+
+.active-button{
+    padding: 5px;
+    width: 80px;
+    border: 1px solid #008767;
+    color: #008767;
+    background-color: #a6e7d8;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inactive-button{
+    padding: 5px;
+    width: 80px;
+    border: 1px solid #df0404;
+    color: #df0404;
+    background-color: #ffc5c5;
+    font-weight: 600;
+    cursor: pointer;
+}
+/*надо доделать*/
+.footer-table-box{
+    color: #bec0c8;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-button{
+    display: flex;
+}
+
+.footer-button button{
+    background-color: #f5f5f5;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.footer-button button:hover{
+    background-color: #5932ea;
+    color: white;
+}
+
+
+@media only screen and (max-width: 1227px) {
+    sub{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 973px) {
+    main{
+        margin-left: 20px;
+    }
+    .nav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    main{
+        width: 100%;
+    }
+    h2{
+        display: none;
+    }
+}
